@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    background-color: rgb(219, 110, 110);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+}
+.headerLinksHolder{
+    margin-top: 13px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.headerLinksHolder a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+        
+}
+
+
+/* video in sec1 */
+   .headerVideo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0%;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(19,19,19,0.7), rgba(0, 0, 0, 0.144));
+   }
+   .headerVideo{
+    left: 0%;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+   }
+
+/*END*/
+
+
+
+
+
+
+
+
+
+.header a {
+    position: relative;
+}
+.headerLinksHolder a:hover{
+    border-bottom: 2px rgb(209, 56, 76) solid;
+    transition-duration: .3px;
+}
+
+.HeaderDropdownContent{
+    display: none;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.headerLinkDropdown:hover .HeaderDropdownContent{
+    display: block;
+    position: absolute;
+
+}
+.HeaderDropdownContent h2{
+    margin-left: 1.8vmin;
+}
+.HeaderDropdownContent h4{
+    margin-left: 3.2vmin;
+    padding-right: 3.2vmin;
+}
+.HeaderDropdownContent a{
+    color: rgb(32, 57, 102);
+}
+
+
+.headerButton{
+    border-radius: 30px;
+    background-color: rgb(183, 226, 104);
+    color:rgb(32, 57, 102);
+    padding: 15px 25px 15px 25px;
+    border: 0px;
+    font-weight: 700;
+}
+.headerButton:hover{
+    transition-duration: .3s;
+    background-color: rgb(32, 57, 102);
+    color: #fff;
+}
